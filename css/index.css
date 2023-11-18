@@ -13,6 +13,11 @@ Esto es debido a que no hemos aprendido aún a cómo usar JavaScript
 */
 
 /* Fuente, padding y margenes a todo */
+@font-face {
+  font-family: 'GILL SANS';
+  src: url(../media/font/Gill\ Sans\ Bold.ttf);
+}
+
 * {
   font-family: 'Gill Sans MT';
   padding: 0;
@@ -34,6 +39,7 @@ header nav a.link {
   padding: 10px;
   align-items: center;
   text-decoration: none;
+  font-size: 20px;
 }
 
 /* Cursor sobre Links del Navbar */
@@ -43,7 +49,7 @@ header nav a.link:hover {
 
 /* SVG del logo: dimensiones y padding */
 #Logo {
-  height: 40px;
+  height: 60px;
   padding: 0px 10px;
 }
 
@@ -64,7 +70,7 @@ header nav a.link:hover {
 
 /* SVG del menú */
 #menu + label > img {
-  height: 25px;
+  height: 35px;
   padding: 0px 10px;
   cursor: pointer;
 }
