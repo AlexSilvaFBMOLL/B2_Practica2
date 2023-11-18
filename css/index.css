@@ -1,3 +1,17 @@
+/*
+Aplicaré la idea "Mobile First"
+De manera que primero diseñaré para móvil y luego,
+si la pantalla es lo suficientemente grande,
+se aplicarán otros estilos
+
+Los Links de la Navbar son aquellos enlaces que no son el Logo
+
+El botón del menú es una etiqueta (label) que actúa
+sobre una checkbox, cuando se marca y se desmarca aplico estilos
+como si de un botón se tratase. 
+Esto es debido a que no hemos aprendido aún a cómo usar JavaScript
+*/
+
 /* Fuente, padding y margenes a todo */
 * {
   font-family: 'Gill Sans MT';
@@ -5,87 +19,29 @@
   margin: 0;
 }
 
-/* Pantallas más pequeñas que 450px : pantallas de móviles */
-@media screen and (max-width: 450px) {
-  /* Enlaces del nav, a excepción del logo */
-  header nav a:not(:first-child) {
-    display: none;
-  }
-
-  /* Barra de navegación */
-  header nav {
-    justify-content: space-between;
-  }
-
-  /* Etiqueta menú */
-  #menu + label {
-    align-self: center;
-  }
-
-  /* Imagen del menú */
-  #menu + label > img {
-    height: 25px;
-    padding: 0px 10px;
-    cursor: pointer;
-  }
-}
-
-/* Pantallas más grandes de 450px : tablets, ordenadores y teles */
-/* Puesto a min 451px para no generar conflictos con el anterior media query */
-@media screen and (min-width: 451px) {
-  /* Etiqueta menú e imagen del menú */
-  #menu + label, #menu + label > img {
-    display: none;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #333;
-  }
-
-  /* Barra de navegación */
-  header nav {
-    background-color: #262626;
-  }
-
-  /* Cambiar al logo de modo oscuro */
-  #Logo {
-    content: url("../media/svg/CWLettersDark.svg");
-  }
-
-  /* Cambiar al menú de modo oscuro */
-  img[alt="Menu"] {
-    content: url("../media/svg/MenuDark.svg");
-  }
-
-  /* Enlaces del nav, a excepción del logo */
-  header nav > a:not(:first-child) {
-    color: white;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-
-  /* Barra de navegación */
-  header nav {
-    background-color: #f2f2f2;
-  }
-
-  /* Enlaces del nav, a excepción del logo */
-  header nav > a:not(:first-child) {
-    color: #262626;
-  }
-}
-
 /* Barra de navegación */
 header nav {
   display: flex;
   flex-direction: row;
-  height: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-/* Logo: dimensiones y padding */
+/* Links del Navbar */
+header nav a.link {
+  flex-basis: 100%;
+  display: none;
+  padding: 10px;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Cursor sobre Links del Navbar */
+header nav a.link:hover {
+  background-color: #099990;
+}
+
+/* SVG del logo: dimensiones y padding */
 #Logo {
   height: 40px;
   padding: 0px 10px;
@@ -96,14 +52,63 @@ header nav {
   display: none;
 }
 
-/* Enlaces del nav, a excepción del logo */
-header nav > a:not(:first-child) {
-  padding: 10px;
-  align-items: center;
-  text-decoration: none;
+/* Botón de menú */
+#menu + label {
+  align-self: center;
 }
 
-/* Cursor sobre enlaces del nav, a excepción del logo */
-header nav > a:not(:first-child):hover {
-  background-color: #099990;
+/* Mostrar los enlaces al pulsar el menú */
+#menu:checked ~ a.link {
+  display: flex;
+}
+
+/* SVG del menú */
+#menu + label > img {
+  height: 25px;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+
+/* Resolución a partir de una tablet */
+@media screen and (min-width: 768px) {
+
+}
+
+/* Resolución a partir de netbook */
+@media screen and (min-width: 1024px) {
+
+}
+
+/* Estilos diferentes para modo oscuro y modo claro */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #333;
+  }
+  /* Barra de navegación */
+  header nav {
+    background-color: #262626;
+  }
+  /* Cambiar al logo de modo oscuro */
+  #Logo {
+    content: url("../media/svg/CWLettersDark.svg");
+  }
+  /* Cambiar al menú de modo oscuro */
+  img[src="media/svg/Menu.svg"] {
+    content: url("../media/svg/MenuDark.svg");
+  }
+  /* Enlaces del navbar */
+  header nav a.link {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  /* Barra de navegación */
+  header nav {
+    background-color: #f2f2f2;
+  }
+  /* Enlaces del navbar */
+  header nav a.link {
+    color: #262626;
+  }
 }
