@@ -1,22 +1,28 @@
+/* Fuente, padding y margenes a todo */
 * {
   font-family: 'Gill Sans MT';
   padding: 0;
   margin: 0;
 }
 
-@media screen and (max-width: 350px) {
+/* Pantallas más pequeñas que 450px : pantallas de móviles */
+@media screen and (max-width: 450px) {
+  /* Enlaces del nav, a excepción del logo */
   header nav a:not(:first-child) {
     display: none;
   }
 
+  /* Barra de navegación */
   header nav {
     justify-content: space-between;
   }
 
+  /* Etiqueta menú */
   #menu + label {
     align-self: center;
   }
 
+  /* Imagen del menú */
   #menu + label > img {
     height: 25px;
     padding: 0px 10px;
@@ -24,7 +30,10 @@
   }
 }
 
-@media screen and (min-width: 351px) {
+/* Pantallas más grandes de 450px : tablets, ordenadores y teles */
+/* Puesto a min 451px para no generar conflictos con el anterior media query */
+@media screen and (min-width: 451px) {
+  /* Etiqueta menú e imagen del menú */
   #menu + label, #menu + label > img {
     display: none;
   }
@@ -35,18 +44,22 @@
     background-color: #333;
   }
 
+  /* Barra de navegación */
   header nav {
     background-color: #262626;
   }
 
+  /* Cambiar al logo de modo oscuro */
   #Logo {
     content: url("../media/svg/CWLettersDark.svg");
   }
 
+  /* Cambiar al menú de modo oscuro */
   img[alt="Menu"] {
     content: url("../media/svg/MenuDark.svg");
   }
 
+  /* Enlaces del nav, a excepción del logo */
   header nav > a:not(:first-child) {
     color: white;
   }
@@ -54,36 +67,43 @@
 
 @media (prefers-color-scheme: light) {
 
+  /* Barra de navegación */
   header nav {
     background-color: #f2f2f2;
   }
 
+  /* Enlaces del nav, a excepción del logo */
   header nav > a:not(:first-child) {
     color: #262626;
   }
 }
 
+/* Barra de navegación */
 header nav {
   display: flex;
   flex-direction: row;
   height: 40px;
 }
 
+/* Logo: dimensiones y padding */
 #Logo {
   height: 40px;
   padding: 0px 10px;
 }
 
+/* Checkbox del menú */
 #menu {
   display: none;
 }
 
+/* Enlaces del nav, a excepción del logo */
 header nav > a:not(:first-child) {
   padding: 10px;
   align-items: center;
   text-decoration: none;
 }
 
+/* Cursor sobre enlaces del nav, a excepción del logo */
 header nav > a:not(:first-child):hover {
   background-color: #099990;
 }
