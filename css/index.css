@@ -1,0 +1,89 @@
+* {
+  font-family: 'Gill Sans MT';
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 350px) {
+  header nav a:not(:first-child) {
+    display: none;
+  }
+
+  header nav {
+    justify-content: space-between;
+  }
+
+  #menu + label {
+    align-self: center;
+  }
+
+  #menu + label > img {
+    height: 25px;
+    padding: 0px 10px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 351px) {
+  #menu + label, #menu + label > img {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #333;
+  }
+
+  header nav {
+    background-color: #262626;
+  }
+
+  #Logo {
+    content: url("../media/svg/CWLettersDark.svg");
+  }
+
+  img[alt="Menu"] {
+    content: url("../media/svg/MenuDark.svg");
+  }
+
+  header nav > a:not(:first-child) {
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+
+  header nav {
+    background-color: #f2f2f2;
+  }
+
+  header nav > a:not(:first-child) {
+    color: #262626;
+  }
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+}
+
+#Logo {
+  height: 40px;
+  padding: 0px 10px;
+}
+
+#menu {
+  display: none;
+}
+
+header nav > a:not(:first-child) {
+  padding: 10px;
+  align-items: center;
+  text-decoration: none;
+}
+
+header nav > a:not(:first-child):hover {
+  background-color: #099990;
+}
