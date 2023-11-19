@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CoinWorld</title>
+  <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" href="media/svg/CWLogo.svg">
 </head>
 <body>
   <header>
@@ -16,10 +18,61 @@
       <!--Al ser marcada la checkbox (pulsando la imagen del menú) se muestran los enlaces de abajo-->
       <input type="checkbox" id="menu"/>
       <label for="menu"><img src="media/svg/Menu.svg" alt="Menú desplegable"/></label>
-      <a href="collection.html" class="link">Colección</a>
-      <a href="map.html" class="link">Mapa</a>
-      <a href="galery.html" class="link">Autor</a>
+      <!--Enlaces de navegación-->
+      <a href="index.html" class="link">Inicio</a>
+      <a href="catalogo.html" class="link">Catálogo</a>
+      <a href="periodos.html" class="link">Periodos</a>
+      <a href="coleccion.html" class="link">Colección</a>
     </nav>
   </header>
+  <!--Contenido: página de inicio, explicación-->
+  <main>
+    <section id="titulo">
+      <h1>CoinWorld</h1>
+      <p>Colecciones numismáticas</p>
+    </section>
+    <section id="info">
+      <div>
+        <h1>Catálogo numismático</h1>
+        <p>Contenido exclusivo de mi propia colección</p>
+        <p>Aprende sobre monedas y billetes del mundo</p>
+        <p>Variaciones, cecas, acuñaciones y más</p>
+      </div>
+      <div>
+        <h1>Gestiona tu colección</h1>
+        <p>En un futuro lejano podrás añadir las monedas que tienes en base a catálogos y periodos añadidos, como una base de datos de tu propia colección</p>
+      </div>
+    </section>
+    <section class="numis">
+      <h1>Monedas</h1>
+      <img src="" alt="Monedas de plata">
+      <img src="" alt="Monedas conmemorativas">
+      <img src="" alt="Monedas circulantes">
+    </section>
+    <section class="numis">
+      <h1>Billetes</h1>
+      <img src="" alt="Billetes de euro">
+      <img src="" alt="Billetes antiguos">
+      <img src="" alt="Billetes extranjeros">
+    </section>
+    <section class="numis">
+      <h1>Exonumia</h1>
+      <img src="" alt="Tokens de feria">
+      <img src="" alt="Medallas">
+      <img src="" alt="Réplicas">
+    </section>
+  </main>
+  <!--Páginas y programas que he utilizado alguna vez para guardar mi colección-->
+  <aside>
+    <a href="https://es.numista.com/">Numista</a>
+    <a href="https://es.ucoin.net/">Ucoin</a>
+    <a href="http://opennumismat.github.io/ca/">OpenNumismat</a>
+  </aside>
+  <!--Footer: enlace a acerca de e info de la página-->
+  <footer>
+    <p>Código fuente en <a href="https://github.com/AlexSilvaFBMOLL/B2_Practica2">Github</a></p>
+    <a href="about.html" class="link">Acerca de</a>
+    <p>CoinWorld</p>
+  </footer>
 </body>
 </html>

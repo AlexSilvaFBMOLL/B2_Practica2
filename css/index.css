@@ -1,125 +1,72 @@
-/*
-Aplicaré la idea "Mobile First"
-De manera que primero diseñaré para móvil y luego,
-si la pantalla es lo suficientemente grande,
-se aplicarán otros estilos
+/* Estilos CSS aplicados únicamente a index.html */
 
-Los Links de la Navbar son aquellos enlaces que no son el Logo
-
-El botón del menú es una etiqueta (label) que actúa
-sobre una checkbox, cuando se marca y se desmarca aplico estilos
-como si de un botón se tratase. 
-Esto es debido a que no hemos aprendido aún a cómo usar JavaScript
-*/
-
-/* Fuente, padding y margenes a todo */
-@font-face {
-  font-family: 'Gill Sans';
-  src: url(../media/font/Gill-Sans.ttf);
+/* Main: contenido principal de la página de inicio */
+main h1 {/* Colores de encabezados */
+  color: var(--text-color);
 }
-
-@font-face {
-  font-family: 'Gill Sans Bold';
-  src: url(../media/font/Gill-Sans-Bold.ttf);
+main p, main img {/* Colores de texto */
+  color: var(--text-color-secondary);
 }
-
-* {
-  font-family: 'Gill Sans';
-  padding: 0;
-  margin: 0;
-}
-
-/* Barra de navegación */
-header nav {
+#titulo {/* Sección con el título de la web y una breve descripción */
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-/* Links del Navbar */
-header nav a.link {
-  flex-basis: 100%;
-  display: none;
-  padding: 10px;
+  flex-direction: column;
+  padding: 20px;
   align-items: center;
-  text-decoration: none;
-  font-size: 20px;
 }
-
-/* Cursor sobre Links del Navbar */
-header nav a.link:hover {
-  background-color: #099990;
+/* Sección de información */
+#info {/* Sección con imagen de fondo e información de la web */
+  content: "";
+  background-image: url(../media/img/album.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  margin: 5%;
+  padding: 2%;
+  min-height: 200px;
 }
-
-/* SVG del logo: dimensiones y padding */
-#Logo {
-  height: 60px;
-  padding: 0px 10px;
-}
-
-/* Checkbox del menú */
-#menu {
-  display: none;
-}
-
-/* Botón de menú */
-#menu + label {
-  align-self: center;
-}
-
-/* Mostrar los enlaces al pulsar el menú */
-#menu:checked ~ a.link {
+#info div {/* Divisores de los bloques de información */
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin: 20px;
+  flex-basis: 50%;
+}
+#info div p {/* Limitar el tamaño de los párrafos de la sección de información */
+  max-width: 300px;
+}
+/* Secciones con imágenes de elementos numismáticos */
+.numis {/* Sección en sí */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px 20px 0px 20px;
+  text-align: center;
+  align-items: center;
+}
+/* Encabezados de sección */
+.numis h1 {
+  flex-basis: 100%;/* Para que ocupen una línea entera */
+  margin-bottom: 20px;
+}
+/* Imagenes de sección */
+.numis img {
+  display: flex;
+  width: 300px;
+  border: 1px solid var(--text-color);
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  margin: 10px;
 }
 
-/* SVG del menú */
-#menu + label > img {
-  height: 35px;
-  padding: 0px 10px;
-  cursor: pointer;
-}
-
-/* Resolución a partir de una tablet */
-@media screen and (min-width: 768px) {
-
-}
-
-/* Resolución a partir de netbook */
-@media screen and (min-width: 1024px) {
-
-}
-
-/* Estilos diferentes para modo oscuro y modo claro */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #333;
-  }
-  /* Barra de navegación */
-  header nav {
-    background-color: #262626;
-  }
-  /* Cambiar al logo de modo oscuro */
-  #Logo {
-    content: url("../media/svg/CWLettersDark.svg");
-  }
-  /* Cambiar al menú de modo oscuro */
-  img[src="media/svg/Menu.svg"] {
-    content: url("../media/svg/MenuDark.svg");
-  }
-  /* Enlaces del navbar */
-  header nav a.link {
-    color: white;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  /* Barra de navegación */
-  header nav {
-    background-color: #f2f2f2;
-  }
-  /* Enlaces del navbar */
-  header nav a.link {
-    color: #262626;
+/* Media querys de resolución */
+@media (min-width: 795px) {/* Resolución aproximada a partir de tablet. Es un valor ajustado manualmente para que la visualización de los elementos no se distorsione */
+  #info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }

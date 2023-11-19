@@ -5,17 +5,19 @@ CoinWorld es una página web creada por Alex Silva cuya finalidad será organiza
 
 En una primera etapa, esta web se mantendrá de forma estática. Todo su contenido será introducido manualmente y siguiendo el curso de las explicaciones. En esencia, a medida que se vayan explicando más cosas esta web se actualizará para cumplir con las expectativas.
 
+Se espera que, una vez finalizada, se pueda iniciar sesión y gestionar una colección individual con monedas y billetes de todo el mundo. No obstante, en los inicios me centraré en introducir las monedas de las que yo dispongo en mi colección, para mostrarlas como si de un catálogo se tratase.
+
 ## Estructura de los archivos
 Los archivos HTML se encuentran en la carpeta raíz, junto a este README y, posteriormente, se hayará también el manifest, utilizado por PWA.
 
-Las carpetas creadas son autodescriptivas, es decir, con leer el nombre de éstas se puede saber qué hay en su interior. No obstante aquí dejo una lista con las 
-diferentes carpetas:
+Las carpetas creadas son autodescriptivas, es decir, con leer el nombre de éstas se puede saber qué hay en su interior. No obstante aquí dejo una lista con las diferentes carpetas:
 
 `Si pasas el ratón sobre los enlaces obtendrás más información sobre ellos.`
 
 + [CSS](css "Archivos de estilo")
 + [Media](media "Contenido multimedia")
   + [Font](media/font "Fuentes de texto")
+  + [IMG](media/img "Imágenes") 
   + [SVG](media/svg "Imágenes vectoriales")
 
 La estructura del proyecto es la siguiente:
@@ -25,6 +27,7 @@ proyecto
 │   index.html    
 │
 └───css
+│   │   global.css
 │   │   index.css
 │   
 └───media
@@ -33,9 +36,13 @@ proyecto
 │   │   │   Gill-Sans-Bold.ttf
 │   │   │   Gill-Sans.ttf
 │   │
+│   └───img
+│   │   │   album.jpg
+│   │
 │   └───svg
 │   │   │   CWLetters.svg
 │   │   │   CWLettersDark.svg
+│   │   │   CWLogo.svg
 │   │   │   Menu.svg
 │   │   │   MenuDark.svg
 ```
@@ -56,6 +63,8 @@ Por último, es una forma de compartir el proyecto con otras personas.
 Mediante esta herramienta en línea gratuita, he diseñado algunos de los SVGs utilizados en este proyecto de manera fácil y rápida.
 ### Adobe Illustrator
 Algunas de las funcionalidades de SVGator están limitadas, por lo que he aprovechado también este software para terminar de pulir los archivos vectoriales.
+### ILoveImg
+Con esta herramienta online he comprimido las imágenes que he tomado con la cámara del móvil, reduciendo hasta un 84% su tamaño.
 
 ## Características y funcionalidades
 ### 18 de noviembre de 2023
@@ -68,3 +77,11 @@ Algunas de las funcionalidades de SVGator están limitadas, por lo que he aprove
 + Logotipos e iconos del desplegable SVG
   + Diseñados en [SVGator](https://app.svgator.com/)
   + Modificados en Adobe Illustrator
+### 19 de noviembre de 2023
++ Diseño Mobile first
+  + Los CSS están diseñados de manera que lo predeterminado es visualizar el contenido en una pantalla pequeña, como un móvil. Luego hay media queries que cambian algunos elementos si la pantalla es lo suficientemente grande.
++ Variables globales
+  + Para reducir la longitud de los CSS en cuanto a la compatibilidad de modo claro y oscuro
++ Favicon
+  + Icono SVG que aparece en la barra de navegación
++ CSS comentados

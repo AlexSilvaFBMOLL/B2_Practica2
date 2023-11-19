@@ -1,0 +1,105 @@
+/* En este archivo se encuentran estilos aplicados globalmente a todas las páginas del proyecto, así como variables globales, media querys aplicadas a todo el proyecto y los estilos referentes a la barra de navegación */
+
+/* Fuentes personalizadas */
+@font-face {
+  font-family: 'Gill Sans';
+  src: url(../media/font/Gill-Sans.ttf);
+}
+@font-face {
+  font-family: 'Gill Sans Bold';
+  src: url(../media/font/Gill-Sans-Bold.ttf);
+}
+/* Archivos ttf con fuentes Gill Sans, ya que muchos dispositivos no tienen esta fuente */
+
+/* Estilos diferentes para modo claro y modo oscuro */
+@media (prefers-color-scheme: dark) {/* Modo oscuro */
+  :root{/* Variables globales */
+    --body-background: #333;
+    --nav-background: #262626;
+    --nav-link: white;
+    --text-color: #f2f2f2;
+    --text-color-secondary: #ccc;
+  }
+  #Logo {/* Cambiar al logo de modo oscuro */
+    content: url("../media/svg/CWLettersDark.svg");
+  }
+  img[src="media/svg/Menu.svg"] {/* Cambiar al menú de modo oscuro */
+    content: url("../media/svg/MenuDark.svg");
+  }
+}
+/* Modo claro */
+@media (prefers-color-scheme: light) {
+  :root{/* Variables globales */
+    --nav-background: #f2f2f2;
+    --nav-link: #262626;
+    --text-color: #099990;
+  }
+}
+/* Mediante la media query de prefers-color-scheme se puede cambiar la apariencia de la página en función de el modo que tenga el usuario configurado en su dispositivo. Además desde la pestaña de inspeccionar de un navegador se puede visualizar la página en cualquiera de sus modos. */
+
+/* Estilos globales */
+* {/* Fuente, padding y margen por defecto */
+  font-family: 'Gill Sans';
+  padding: 0;
+  margin: 0;
+}
+body {/* Color de fondo del cuerpo de la página */
+  background-color: var(--body-background);
+}
+/* Para no tener que poner estas líneas en cada CSS las pongo aquí */
+
+/* Barra de navegación */
+header nav {/* Navbar */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;/* Solo en móviles */
+  justify-content: space-between;/* Solo en móviles */
+  background-color: var(--nav-background);
+}
+header nav a.link {/* Enlaces del Navbar con clase link (todos menos el logotipo) */
+  flex-basis: 100%;/* Para que ocupen una línea entera en móviles */
+  display: none;
+  padding: 10px 25px;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--nav-link);
+}
+header nav a.link:hover {/* Cursor sobre Links del Navbar */
+  background-color: #099990;/* No cambia en función del modo de visualización */
+}
+#Logo {/* SVG del logo: dimensiones y padding */
+  height: 60px;
+  padding: 0px 10px;
+}
+/* El botón desplegable del menú no es un botón, sino una checkbox. Cuando está marcada muestra los enlaces de navegación en una columna, si está desmarcada los oculta */
+#menu {/* Ocultar la checkbox del menú */
+  display: none;
+}
+#menu + label {/* Alinear el contenedor de la imagen del menú */
+  align-self: center;
+}
+#menu:checked ~ a.link {/* Mostrar los enlaces al pulsar el menú */
+  display: flex;
+}
+#menu + label > img {/* SVG del menú, la imagen en sí */
+  height: 40px;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+
+/* Media querys de la navbar */
+@media (min-width: 1024px) {/* Resolución a partir de netbook (ordenador pequeño) */
+  header nav {/* Barra de navegación */
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  header nav a.link {/* Links del Navbar */
+    flex-basis: content;
+    display: flex;
+  }
+  #menu + label > img {/* SVG del menú desplegable */
+    display: none;
+  }
+}
+/* En un ordenador se elimina el icono desplegable y se colocan los elementos del menú en una sola fila */
