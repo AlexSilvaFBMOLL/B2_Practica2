@@ -15,12 +15,12 @@ Esto es debido a que no hemos aprendido aún a cómo usar JavaScript
 /* Fuente, padding y margenes a todo */
 @font-face {
   font-family: 'Gill Sans';
-  src: url(../media/font/Gill\ Sans.ttf);
+  src: url(../media/font/Gill-Sans.ttf);
 }
 
 @font-face {
   font-family: 'Gill Sans Bold';
-  src: url(../media/font/Gill\ Sans\ Bold.ttfs.ttf);
+  src: url(../media/font/Gill-Sans-Bold.ttf);
 }
 
 * {
