@@ -39,16 +39,22 @@ proyecto
 │   │   │   MenuDark.svg
 ```
 ## Tecnologías utilizadas
-+ Visual Studio Code
-  + Desarrollo del proyecto
-+ Extensión Live Server
-  + Testeo de página web en distintos dispositivos
-+ GitHub
-  + Llevar un control de versiones y copias de seguridad
-+ SVGator
-  + Diseño de SVGs
-+ Adobe Illustrator
-  + Modificar los SVGs diseñados: convertir texto a path
+### Visual Studio Code
+El proyecto se ha desarrollado con VSCode.
+### Extensión Live Server
+Con la extensión Live Server de VSCode, se ha testeado la página web en diversos dispositivos (móviles, portátiles) para poder mejorar la página según los resultados mostrados en cada uno de ellos.
+
+Además, cada vez que se guardan los documentos editados, se actualizan automáticamente las pestañas de los navegadores.
+### GitHub
+Se ha trabajado en este proyecto en dos ordenadores, por lo que tener GitHub como repositorio no sólo ha ayudado a generar copias de seguridad, sino que ha permitido pasar archivos entre mis dos ordenadores para poder trabajar desde cualquiera de ellos.
+
+También permite crear distintas ramas, por ejemplo: en el ordenador de sobremesa he creado una rama donde he implementado un manifest de la web, mientras que en el portátil estos cambios no aparecen porque aún no quiero que se implemente en la rama principal.
+
+Por último, es una forma de compartir el proyecto con otras personas.
+### SVGator
+Mediante esta herramienta en línea gratuita, he diseñado algunos de los SVGs utilizados en este proyecto de manera fácil y rápida.
+### Adobe Illustrator
+Algunas de las funcionalidades de SVGator están limitadas, por lo que he aprovechado también este software para terminar de pulir los archivos vectoriales.
 
 ## Características y funcionalidades
 ### 18 de noviembre de 2023
