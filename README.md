@@ -38,6 +38,15 @@ proyecto
 │   │
 │   └───img
 │   │   │   album.jpg
+│   │   │   billeteantiguo.jpg
+│   │   │   billeteeuro.jpg
+│   │   │   billeteextranjero.jpg
+│   │   │   circulantes.jpg
+│   │   │   conmemorativa.jpg
+│   │   │   plata.jpg
+│   │   │   recuerdo.jpg
+│   │   │   replica.jpg
+│   │   │   token.jpg
 │   │
 │   └───svg
 │   │   │   CWLetters.svg
@@ -80,8 +89,8 @@ Con esta herramienta online he comprimido las imágenes que he tomado con la cá
 ### 19 de noviembre de 2023
 + Diseño Mobile first
   + Los CSS están diseñados de manera que lo predeterminado es visualizar el contenido en una pantalla pequeña, como un móvil. Luego hay media queries que cambian algunos elementos si la pantalla es lo suficientemente grande.
-+ Variables globales
-  + Para reducir la longitud de los CSS en cuanto a la compatibilidad de modo claro y oscuro
++ Segregación de CSS
+  + Para reducir la longitud de los CSS y evitar duplicados
 + Favicon
   + Icono SVG que aparece en la barra de navegación
-+ CSS comentados
++ Imágenes de la página de inicio

@@ -14,11 +14,12 @@
 /* Estilos diferentes para modo claro y modo oscuro */
 @media (prefers-color-scheme: dark) {/* Modo oscuro */
   :root{/* Variables globales */
-    --body-background: #333;
-    --nav-background: #262626;
-    --nav-link: white;
-    --text-color: #f2f2f2;
-    --text-color-secondary: #ccc;
+    --body-background: #333;/* Color de fondo del body */
+    --nav-background: #262626;/* Color de fondo del navbar */
+    --nav-link: white;/* Texto de los enlaces del navbar */
+    --text-color: #f2f2f2;/* Texto principal de las páginas */
+    --text-color-secondary: #ccc;/* Color de texto secundario */
+    --background-filter: #33333380;/* Filtro de color para imágenes */
   }
   #Logo {/* Cambiar al logo de modo oscuro */
     content: url("../media/svg/CWLettersDark.svg");
@@ -30,9 +31,11 @@
 /* Modo claro */
 @media (prefers-color-scheme: light) {
   :root{/* Variables globales */
+    --body-background: white;
     --nav-background: #f2f2f2;
     --nav-link: #262626;
     --text-color: #099990;
+    --background-filter: #ffffff80;
   }
 }
 /* Mediante la media query de prefers-color-scheme se puede cambiar la apariencia de la página en función de el modo que tenga el usuario configurado en su dispositivo. Además desde la pestaña de inspeccionar de un navegador se puede visualizar la página en cualquiera de sus modos. */
