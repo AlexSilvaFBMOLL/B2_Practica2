@@ -1,0 +1,19 @@
+{
+    "name": "CoinWorld",
+    "short_name": "CoinWorld",
+    "description": "Web app hecha por Alex Silva para su colección de monedas",
+    "icons": [{
+        "src": "media/png/CWLogo512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    },
+    {
+        "src": "media/png/CWLogo192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }],
+    "start_url": "/inicio",
+    "display": "standalone",
+    "background_color": "#099990",
+    "theme_color": "#099990"
+}
