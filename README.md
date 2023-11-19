@@ -8,10 +8,12 @@ En una primera etapa, esta web se mantendrá de forma estática. Todo su conteni
 ## Estructura de los archivos
 Los archivos HTML se encuentran en la carpeta raíz, junto a este README y, posteriormente, se hayará también el manifest, utilizado por PWA.
 
-Las carpetas creadas son autodescriptivas, es decir, con leer el nombre de éstas se puede saber qué hay en su interior. No obstante aquí dejo una lista con las diferentes carpetas:
-```
+Las carpetas creadas son autodescriptivas, es decir, con leer el nombre de éstas se puede saber qué hay en su interior. No obstante aquí dejo una lista con las 
+diferentes carpetas:
+
+`
 Si pasas el ratón sobre los enlaces obtendrás más información sobre ellos.
-```
+`
 + [CSS](css "Archivos de estilo")
 + [Media](media "Contenido multimedia")
   + [Font](media/font "Fuentes de texto")
