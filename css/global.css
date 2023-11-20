@@ -53,6 +53,7 @@ body {/* Color de fondo del cuerpo de la página */
 
 /* Barra de navegación */
 header nav {/* Navbar */
+  min-height: 64px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;/* Solo en móviles */
@@ -68,7 +69,7 @@ header nav a.link {/* Enlaces del Navbar con clase link (todos menos el logotipo
   font-size: 20px;
   color: var(--nav-link);
 }
-header nav a.link:hover {/* Cursor sobre Links del Navbar */
+header nav a.link:hover, header nav a.link.active {/* Cursor sobre Links del Navbar */
   background-color: #099990;/* No cambia en función del modo de visualización */
 }
 #Logo {/* SVG del logo: dimensiones y padding */
@@ -95,7 +96,12 @@ header nav a.link:hover {/* Cursor sobre Links del Navbar */
 @media (min-width: 1024px) {/* Resolución a partir de netbook (ordenador pequeño) */
   header nav {/* Barra de navegación */
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: center;
+  }
+  header nav a[href="index.html"] {/* Enlace del logo */
+    position: absolute;
+    align-self: center;
+    left: 0;
   }
   header nav a.link {/* Links del Navbar */
     flex-basis: content;
