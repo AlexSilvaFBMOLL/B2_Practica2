@@ -63,7 +63,7 @@ header nav {/* Navbar */
 header nav a.link {/* Enlaces del Navbar con clase link (todos menos el logotipo) */
   flex-basis: 100%;/* Para que ocupen una línea entera en móviles */
   display: none;
-  padding: 10px 25px;
+  padding: 10px 10px;
   align-items: center;
   text-decoration: none;
   font-size: 20px;
@@ -106,6 +106,7 @@ header nav a.link:hover, header nav a.link.active {/* Cursor sobre Links del Nav
   header nav a.link {/* Links del Navbar */
     flex-basis: content;
     display: flex;
+    padding: 10px 25px;
   }
   #menu + label > img {/* SVG del menú desplegable */
     display: none;
