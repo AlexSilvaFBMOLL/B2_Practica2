@@ -23,12 +23,12 @@ Las carpetas creadas son autodescriptivas, es decir, con leer el nombre de ésta
 La estructura del proyecto es la siguiente:
 ```
 proyecto
-│   README.md
-│   index.html    
+│   README.md (Este documento)
+│   index.html (Página de inicio)
 │
 └───css
-│   │   global.css
-│   │   index.css
+│   │   global.css (Estilos aplicados a todas las páginas)
+│   │   index.css (Estilos de la página de inicio)
 │   
 └───media
 │   │
@@ -37,16 +37,11 @@ proyecto
 │   │   │   Gill-Sans.ttf
 │   │
 │   └───img
-│   │   │   album.jpg
-│   │   │   billeteantiguo.jpg
-│   │   │   billeteeuro.jpg
-│   │   │   billeteextranjero.jpg
-│   │   │   circulantes.jpg
-│   │   │   conmemorativa.jpg
-│   │   │   plata.jpg
-│   │   │   recuerdo.jpg
-│   │   │   replica.jpg
-│   │   │   token.jpg
+│   │   │   album.jpg (foto tomada por mí)
+│   │   │   AT_KM3141.png (Austria KM# 3141) (foto tomada por mí)
+│   │   │   AT_KM3275.png (Austria KM# 3275) (foto tomada por mí)
+│   │   │   ES_UC350.png (España UC# 350) (foto tomada por mí)
+│   │   │   EUR_0,50.png (50 céntimos de euro) (foto tomada por mí)
 │   │
 │   └───svg
 │   │   │   CWLetters.svg
@@ -72,8 +67,10 @@ Por último, es una forma de compartir el proyecto con otras personas.
 Mediante esta herramienta en línea gratuita, he diseñado algunos de los SVGs utilizados en este proyecto de manera fácil y rápida.
 ### Adobe Illustrator
 Algunas de las funcionalidades de SVGator están limitadas, por lo que he aprovechado también este software para terminar de pulir los archivos vectoriales.
+### Adobe Photoshop
+He tomado diversas imágenes para colgar en la página web. Las de monedas han sido recortadas y rotadas con esta herramienta.
 ### ILoveImg
-Con esta herramienta online he comprimido las imágenes que he tomado con la cámara del móvil, reduciendo hasta un 84% su tamaño.
+Las fotografías que he tomado ocupaban 10MB porque tenían una resolución de 8000x6000px. Las he reducido a 300px de ancho y las he comprimido gracias a esta herramienta online, reduciendo su tamaño a unas decenas de kilobytes.
 
 ## Características y funcionalidades
 ### 18 de noviembre de 2023
@@ -93,4 +90,7 @@ Con esta herramienta online he comprimido las imágenes que he tomado con la cá
   + Para reducir la longitud de los CSS y evitar duplicados
 + Favicon
   + Icono SVG que aparece en la barra de navegación
-+ Imágenes de la página de inicio
++ Página de inicio
+### 20 de noviembre de 2023
++ Toma de imágenes
+  + He añadido las imágenes que faltaban en la página de inicio. Las fotografías son de elementos de mi propia colección, tomadas con la cámara del móvil a máxima resolución.

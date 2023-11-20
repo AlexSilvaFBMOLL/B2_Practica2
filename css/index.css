@@ -59,10 +59,11 @@ main p, main img {/* Colores de texto */
 }
 .numis img {/* Imágenes de .numis */
   display: flex;
-  width: 300px;
   align-items: center;
   justify-content: center;
   margin: 10px;
+  max-width: 300px;
+  max-height: 300px;
 }
 .numis span {/* Al poner el ratón sobre la imagen o al pulsarla sale este texto */
   position: absolute;
@@ -77,54 +78,52 @@ main p, main img {/* Colores de texto */
 .numis a img:hover ~ span {/* El display del texto al hacer hover */
   display: block;
 }
-.numis footer {/* Dentro del footer hay un small, para el copyright de las imágenes. Este copyright solo está en imágenes de exonumia, ya que no son emitidas por una sucursal bancaria estatal. Las imágenes de monedas y billetes no tienen copyright */
-  color: var(--text-color-secondary);
-}
-/* Enlaces a páginas de referencia del mundo de la numismática */
+
+/* Enlaces a páginas y programas del mundo de la numismática */
 aside {/* Contenedor de otras páginas */
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: var(--nav-background);
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  align-items: center;
 }
 aside h1 {/* Título de páginas de interés */
   color: var(--text-color);
-  margin: 20px;
+  margin-bottom: 10px;
   font-size: 20px;
-  text-align: center;
-  flex-basis: 100%;
 }
 aside a {/* Los enlaces de interés */
-  font-weight: bold;
   margin: 10px;
   color: var(--text-color-secondary);
   text-decoration: none;
 }
+aside a:hover {/* Los enlaces de interés al pasar el ratón por encima */
+  color: var(--text-color);
+}
 /* Footer con información no tan relevante sobre la página */
-body > footer {/* Se tiene que poner el selector de esta manera porque se utiliza el footer en otros elementos */
+footer {
   background-color: var(--nav-background);
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--text-color);
+  color: var(--text-color-secondary);
   padding: 100px;
 }
-body > footer a {/* Enlaces al github y a la página de acerca de */
+footer a {/* Enlace al github */
   font-weight: bold;
   color: var(--text-color);
   text-decoration: none;
 }
 /* Media querys de resolución */
 @media (min-width: 795px) {/* Resolución aproximada a partir de tablet. Es un valor ajustado manualmente para que la visualización de los elementos no se distorsione */
-  #info {
+  #info {/* Pone en dos columnas el texto del apartado de info */
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
 }
-
 @media (min-width: 1024px) {/* Resolución a partir de netbook (ordenador pequeño) */
   .numis a {
-    flex-basis: 33.33%;
+    flex-basis: 33.33%;/* Pone las imágenes en filas de 3 elementos en vez de una debajo de la otra */
   }
 }
