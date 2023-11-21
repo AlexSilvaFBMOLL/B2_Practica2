@@ -1,4 +1,4 @@
-/* En este archivo se encuentran estilos aplicados globalmente a todas las páginas del proyecto, así como variables globales, media querys aplicadas a todo el proyecto y los estilos referentes a la barra de navegación */
+/* En este archivo se encuentran estilos aplicados globalmente a todas las páginas del proyecto, así como variables globales, media querys aplicadas a todo el proyecto y los estilos referentes a la barra de navegación y al footer de las páginas */
 
 /* Fuentes personalizadas */
 @font-face {
@@ -90,6 +90,21 @@ header nav a.link:hover, header nav a.link.active {/* Cursor sobre Links del Nav
   height: 40px;
   padding: 0px 10px;
   cursor: pointer;
+}
+
+/* Footer con información sobre el github */
+footer {
+  background-color: var(--nav-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color-secondary);
+  padding: 100px;
+}
+footer a {/* Enlace al github */
+  font-weight: bold;
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 /* Media querys de la navbar */

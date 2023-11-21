@@ -100,20 +100,6 @@ aside a {/* Los enlaces de interés */
 aside a:hover {/* Los enlaces de interés al pasar el ratón por encima */
   color: var(--text-color);
 }
-/* Footer con información no tan relevante sobre la página */
-footer {
-  background-color: var(--nav-background);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--text-color-secondary);
-  padding: 100px;
-}
-footer a {/* Enlace al github */
-  font-weight: bold;
-  color: var(--text-color);
-  text-decoration: none;
-}
 /* Media querys de resolución */
 @media (min-width: 795px) {/* Resolución aproximada a partir de tablet. Es un valor ajustado manualmente para que la visualización de los elementos no se distorsione */
   #info {/* Pone en dos columnas el texto del apartado de info */
