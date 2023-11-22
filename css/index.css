@@ -20,7 +20,7 @@ main p, main img {/* Colores de texto (img para los alt) */
 /* Sección de información */
 #info {/* Sección con imagen de fondo e información de la web */
   content: "";
-  background-image: url(../media/img/album.jpg);
+  background-image: url(../media/img/fondo/album.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
