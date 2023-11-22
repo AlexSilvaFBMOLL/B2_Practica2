@@ -18,17 +18,26 @@ Las carpetas creadas son autodescriptivas, es decir, con leer el nombre de ésta
 + [Media](media "Contenido multimedia")
   + [Font](media/font "Fuentes de texto")
   + [IMG](media/img "Imágenes") 
+    + [Billetes](media/img/billetes/ "Imágenes de billetes")
+    + [Exonumia](media/img/exonumia/ "Imágenes de exonumia")
+    + [Fondo](media/img/fondo/ "Imágenes utilizadas para fondos")
+    + [Monedas](media/img/monedas "Imágenes de monedas")
   + [SVG](media/svg "Imágenes vectoriales")
 
 La estructura del proyecto es la siguiente:
 ```
 proyecto
 │   README.md (Este documento)
+│   billetes.html (Página dedicada a los billetes)
+│   exonumia.html (Página dedicada a la exonumia)
 │   index.html (Página de inicio)
+│   monedas.html (Página dedicada a las monedas)
+│   numismatica.html (Página donde se habla de numismática)
 │
 └───css
 │   │   global.css (Estilos aplicados a todas las páginas)
 │   │   index.css (Estilos de la página de inicio)
+│   │   numismatica.css (Estilos de la página de numismática)
 │   
 └───media
 │   │
@@ -36,12 +45,23 @@ proyecto
 │   │   │   Gill-Sans-Bold.ttf
 │   │   │   Gill-Sans.ttf
 │   │
-│   └───img
-│   │   │   album.jpg (foto tomada por mí)
-│   │   │   AT_KM3141.png (Austria KM# 3141) (foto tomada por mí)
-│   │   │   AT_KM3275.png (Austria KM# 3275) (foto tomada por mí)
-│   │   │   ES_UC350.png (España UC# 350) (foto tomada por mí)
-│   │   │   EUR_0,50.png (50 céntimos de euro) (foto tomada por mí)
+│   └───img (imágenes tomadas por mí)
+|   │   └───billetes
+│   │   │   |   ES_P147.png (España P# 147)
+│   │   │   |   EUR_10.png (Billete de 10 euros)
+│   │   │   |   US_2.png (Billete de 2 dólares)
+|   │   └───exonumia
+│   │   │   |   recuerdo.png (Moneda elongada de recuerdo)
+│   │   │   |   replica.png (Réplica francesa de una moneda)
+│   │   │   |   token.png (Ficha de feria)
+|   │   └───fondo
+│   │   │   |   album.jpg
+│   │   │   |   coins.jpg
+|   │   └───monedas
+│   │   │   |   AT_KM3141.png (Austria KM# 3141)
+│   │   │   |   AT_KM3275.png (Austria KM# 3275)
+│   │   │   |   ES_UC350.png (España UC# 350)
+│   │   │   |   EUR_0,50.png (Cara común de 50 céntimos de euro)
 │   │
 │   └───svg
 │   │   │   CWLetters.svg
@@ -91,6 +111,10 @@ Las fotografías que he tomado ocupaban 10MB porque tenían una resolución de 8
 + Favicon
   + Icono SVG que aparece en la barra de navegación
 + Página de inicio
+  + Creación de la primera página que se verá al entrar en la web. En esta aparecen dos notas acerca de qué irá la página, además de enseñar algunos elementos de la colección.
 ### 20 de noviembre de 2023
 + Toma de imágenes
-  + He añadido las imágenes que faltaban en la página de inicio. Las fotografías son de elementos de mi propia colección, tomadas con la cámara del móvil a máxima resolución.
+  + He añadido las imágenes que faltaban en la página de inicio. Las fotografías son de elementos de mi propia colección, tomadas con la cámara del móvil a máxima resolución, luego comprimidas y redimensionadas con ILoveIMG.
+### 22 de noviembre de 2023
++ Página de numismática
+  + Se ha creado una página donde se habla de qué es la numismática, con diversas imágenes y artículos.
