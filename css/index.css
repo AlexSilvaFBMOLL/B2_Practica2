@@ -4,7 +4,7 @@
 main h1 {/* Colores de encabezados */
   color: var(--text-color);
 }
-main p, main img {/* Colores de texto */
+main p, main img {/* Colores de texto (img para los alt) */
   color: var(--text-color-secondary);
 }
 #titulo {/* Sección con el título de la web y una breve descripción */
