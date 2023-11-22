@@ -1,6 +1,7 @@
 /* Estilos CSS aplicados únicamente a numismatica.html */
 
-article {
+/* Articulos de la página */
+article {/* Contenedor de artículos */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +13,7 @@ article {
 article h1 {/* Colores de encabezados */
   color: var(--text-color);
 }
-article img {
+article img {/* Imágenes de los artículos */
   margin: 20px;
   width: 100vw;
   height: 200px;
@@ -24,4 +25,12 @@ article p {/* Colores de texto */
   max-width: 500px;
   color: var(--text-color-secondary);
   margin: 5px;
+}
+article a {/* Enlaces que pueda haber en los párrafos */
+  color: var(--text-color-secondary);
+  font-weight: bold;
+  text-decoration: none;
+}
+article a:hover {/* Hover enlaces */
+  color: var(--text-color);
 }
