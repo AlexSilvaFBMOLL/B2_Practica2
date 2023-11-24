@@ -5,17 +5,19 @@ article {/* Contenedor de artículos */
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  background-color: var(--background-filter);
   padding: 20px;
   border-radius: 30px;
+}
+article > * { /* Limita el tamaño máximo de los elementos del artículo. */
+  max-width: 1000px;
 }
 article h1 {/* Colores de encabezados */
   color: var(--text-color);
 }
 article img {/* Imágenes de los artículos */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; /* Para el alt */
+  align-items: center; /* Para el alt */
+  justify-content: center; /* Para el alt */
   margin: 20px;
   width: 90vw;
   height: 200px;
@@ -25,16 +27,6 @@ article img {/* Imágenes de los artículos */
   color: var(--text-color-secondary);
 }
 article p {/* Colores de texto */
-  max-width: 750px;
   color: var(--text-color-secondary);
   margin: 5px;
-}
-
-article a {/* Enlaces que pueda haber en los párrafos */
-  color: var(--text-color-secondary);
-  font-weight: bold;
-  text-decoration: none;
-}
-article a:hover {/* Hover enlaces */
-  color: var(--text-color);
 }
