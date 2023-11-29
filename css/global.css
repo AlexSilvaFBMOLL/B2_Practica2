@@ -31,8 +31,8 @@
 /* Modo claro */
 @media (prefers-color-scheme: light) {
   :root{/* Variables globales */
-    --body-background: white;
-    --nav-background: #f2f2f2;
+    --body-background: #f2f2f2;
+    --nav-background: #dadada;
     --nav-link: #262626;
     --text-color: #099990;
     --background-filter: #ffffff80;

@@ -51,6 +51,7 @@ main p, main img {/* Colores de texto (img para los alt) */
   flex-basis: 100%;/* Para que ocupen una línea entera */
 }
 .numis a {/* Enlaces de .numis */
+  color: var(--text-color-secondary);
   display: flex;
   flex-direction: column;
   justify-content: center;
