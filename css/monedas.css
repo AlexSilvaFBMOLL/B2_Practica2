@@ -1,29 +1,17 @@
-/* Estilos CSS aplicados únicamente a monedas.html */
-/* Articulos de la página */
-article {/* Contenedor de artículos */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: justify;
-  margin: 10px;
-}
-article div {
+/* Estilos CSS aplicados únicamente a los html que contienen monedas */
+main {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  color: var(--text-color-secondary);
+  flex-wrap: nowrap;
 }
-article div img {/* Imágenes de los artículos */
-  width: 100%;
-  max-width: 300px;
-  margin: 10px;
+section img {
+  max-width: 200px;
+  padding: 20px;
 }
-article h1 {/* Colores de encabezados */
-  color: var(--text-color);
-  margin: 10px;
+aside img {
+  max-width: 150px;
+  padding: 20px;
 }
-article p, article small {/* Colores de texto */
-  color: var(--text-color-secondary);
-  margin: 5px 0px;
-  max-width: 1000px;
+main > * {
+  border: 1px solid red;
 }

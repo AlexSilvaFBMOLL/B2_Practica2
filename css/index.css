@@ -44,13 +44,14 @@ main p, main img {/* Colores de texto (img para los alt) */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 20px 20px 20px 20px;
   text-align: center;/* Para los span y el texto alternativo de las imágenes */
 }
 .numis h1 {/* Encabezados de las secciones .numis */
   flex-basis: 100%;/* Para que ocupen una línea entera */
 }
-.numis a {/* Enlaces de .numis */
+.numis div {/* Enlaces de .numis */
   color: var(--text-color-secondary);
   display: flex;
   flex-direction: column;
@@ -62,7 +63,7 @@ main p, main img {/* Colores de texto (img para los alt) */
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
+  margin: 10px 0px;
   max-width: 300px;
   max-height: 300px;
 }
@@ -72,20 +73,20 @@ main p, main img {/* Colores de texto (img para los alt) */
   display: none;
   color: var(--text-color-secondary);
 }
-.numis a img:hover {/* Acción de hover sobre la imagen */
+.numis div img:hover {/* Acción de hover sobre la imagen */
   color: var(--body-background);
   filter: opacity(50%);
 }
-.numis a img:hover ~ span {/* El display del texto al hacer hover */
+.numis div img:hover ~ span {/* El display del texto al hacer hover */
   display: block;
+  
 }
-
 /* Enlaces a páginas y programas del mundo de la numismática */
 aside {/* Contenedor de otras páginas */
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   align-items: center;
 }
 aside h1 {/* Título de páginas de interés */
@@ -93,13 +94,25 @@ aside h1 {/* Título de páginas de interés */
   margin-bottom: 10px;
   font-size: 20px;
 }
+aside div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 aside a {/* Los enlaces de interés */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   margin: 10px;
   color: var(--text-color-secondary);
   text-decoration: none;
 }
 aside a:hover {/* Los enlaces de interés al pasar el ratón por encima */
   color: var(--text-color);
+}
+aside a img {
+  margin-right: 10px;
 }
 /* Media querys de resolución */
 @media (min-width: 795px) {/* Resolución aproximada a partir de tablet. Es un valor ajustado manualmente para que la visualización de los elementos no se distorsione */
@@ -110,7 +123,7 @@ aside a:hover {/* Los enlaces de interés al pasar el ratón por encima */
   }
 }
 @media (min-width: 1024px) {/* Resolución a partir de netbook (ordenador pequeño) */
-  .numis a {
+  .numis div {
     flex-basis: 33.33%;/* Pone las imágenes en filas de 3 elementos en vez de una debajo de la otra */
   }
 }
