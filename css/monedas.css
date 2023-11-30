@@ -1,17 +1,36 @@
 /* Estilos CSS aplicados únicamente a los html que contienen monedas */
+h1, h2, h3 {/* Colores de encabezados */
+  color: var(--text-color);
+}
+p, img, label {/* Colores de texto (img para los alt) */
+  color: var(--text-color-secondary);
+}
 main {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  right: 0;
 }
-section img {
-  max-width: 200px;
-  padding: 20px;
+article {
+  align-self: center;
+  text-align: justify;
+  margin: 20px 0px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
+  max-width: 1000px;
 }
-aside img {
-  max-width: 150px;
-  padding: 20px;
+article > * {
+  margin: 0px 20px;
 }
-main > * {
-  border: 1px solid red;
+article div {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+  justify-content: center;
+}
+article img {
+  width: 300px;
+  max-width: 45vw;
+}
+article p {
+  margin-top: 10px;
 }

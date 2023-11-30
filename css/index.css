@@ -51,7 +51,7 @@ main p, main img {/* Colores de texto (img para los alt) */
 .numis h1 {/* Encabezados de las secciones .numis */
   flex-basis: 100%;/* Para que ocupen una línea entera */
 }
-.numis div {/* Enlaces de .numis */
+.numis a {/* Enlaces de .numis */
   color: var(--text-color-secondary);
   display: flex;
   flex-direction: column;
@@ -73,11 +73,11 @@ main p, main img {/* Colores de texto (img para los alt) */
   display: none;
   color: var(--text-color-secondary);
 }
-.numis div img:hover {/* Acción de hover sobre la imagen */
+.numis a img:hover {/* Acción de hover sobre la imagen */
   color: var(--body-background);
   filter: opacity(50%);
 }
-.numis div img:hover ~ span {/* El display del texto al hacer hover */
+.numis a img:hover ~ span {/* El display del texto al hacer hover */
   display: block;
   
 }
@@ -123,7 +123,7 @@ aside a img {
   }
 }
 @media (min-width: 1024px) {/* Resolución a partir de netbook (ordenador pequeño) */
-  .numis div {
+  .numis a {
     flex-basis: 33.33%;/* Pone las imágenes en filas de 3 elementos en vez de una debajo de la otra */
   }
 }
