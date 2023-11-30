@@ -5,7 +5,7 @@ CoinWorld es una página web creada por Alex Silva cuya finalidad será organiza
 
 En una primera etapa, esta web se mantendrá de forma estática. Todo su contenido será introducido manualmente y siguiendo el curso de las explicaciones. En esencia, a medida que se vayan explicando más cosas esta web se actualizará para cumplir con las expectativas.
 
-Se espera que, una vez finalizada, se pueda iniciar sesión y gestionar una colección individual con monedas y billetes de todo el mundo. No obstante, en los inicios me centraré en introducir las monedas de las que yo dispongo en mi colección, para mostrarlas como si de un catálogo se tratase.
+Se espera que, una vez finalizada, se pueda iniciar sesión y gestionar una colección individual con monedas y billetes de todo el mundo. No obstante, en los inicios me centraré en introducir las monedas de las que yo dispongo en mi colección y explicar qué es la numismática y los diferentes tipos de piezas que se coleccionan en esta práctica.
 
 ## Estructura de los archivos
 Los archivos HTML se encuentran en la carpeta raíz, junto a este README y, posteriormente, se hayará también el manifest, utilizado por PWA.
@@ -22,6 +22,7 @@ Las carpetas creadas son autodescriptivas, es decir, con leer el nombre de ésta
     + [Exonumia](media/img/exonumia/ "Imágenes de exonumia")
     + [Fondo](media/img/fondo/ "Imágenes utilizadas para fondos")
     + [Monedas](media/img/monedas "Imágenes de monedas")
+    + [Otras](media/img/otras/ "Otras imágenes: logotipos de páginas externas")
   + [SVG](media/svg "Imágenes vectoriales")
 
 La estructura del proyecto es la siguiente:
@@ -37,6 +38,7 @@ proyecto
 └───css
 │   │   global.css (Estilos aplicados a todas las páginas)
 │   │   index.css (Estilos de la página de inicio)
+│   │   monedas.css (Estilos de la página de monedas)
 │   │   numismatica.css (Estilos de la página de numismática)
 │   
 └───media
@@ -47,21 +49,29 @@ proyecto
 │   │
 │   └───img (imágenes tomadas por mí)
 |   │   └───billetes
-│   │   │   |   ES_P147.png (España P# 147)
-│   │   │   |   EUR_10.png (Billete de 10 euros)
-│   │   │   |   US_2.png (Billete de 2 dólares)
+│   │   │   |   ES_P147.jpg (España P# 147)
+│   │   │   |   EUR_10.jpg (Billete de 10 euros)
+│   │   │   |   US_2.jpg (Billete de 2 dólares)
 |   │   └───exonumia
 │   │   │   |   recuerdo.png (Moneda elongada de recuerdo)
 │   │   │   |   replica.png (Réplica francesa de una moneda)
 │   │   │   |   token.png (Ficha de feria)
 |   │   └───fondo
+│   │   │   |   accesorios.jpg
 │   │   │   |   album.jpg
 │   │   │   |   coins.jpg
+│   │   │   |   exonumia.jpg
 |   │   └───monedas
 │   │   │   |   AT_KM3141.png (Austria KM# 3141)
 │   │   │   |   AT_KM3275.png (Austria KM# 3275)
+│   │   │   |   ES_UC350-R.png (Reverso de España UC# 350)
 │   │   │   |   ES_UC350.png (España UC# 350)
 │   │   │   |   EUR_0,50.png (Cara común de 50 céntimos de euro)
+│   │   │   |   EUR_2.png (Cara común de moneda de 2 euros)
+|   │   └───otras
+│   │   │   |   numista.png (Logo de Numista)
+│   │   │   |   opennumismat.png (Logo de OpenNumismat)
+│   │   │   |   ucoin.png (Logo de Ucoin)
 │   │
 │   └───svg
 │   │   │   CWLetters.svg
@@ -72,23 +82,20 @@ proyecto
 ```
 ## Tecnologías utilizadas
 ### Visual Studio Code
-El proyecto se ha desarrollado con VSCode.
+El proyecto se ha desarrollado con VSCode. Gracias a este IDE se ha podido crear un código ordenado y limpio de una forma más sencilla y visual que con un editor de texto.
 ### Extensión Live Server
-Con la extensión Live Server de VSCode, se ha testeado la página web en diversos dispositivos (móviles, portátiles) para poder mejorar la página según los resultados mostrados en cada uno de ellos.
-
+Con la extensión Live Server de VSCode, se ha testeado la página web en diversos dispositivos (móviles, portátiles) para poder mejorar la página según los resultados mostrados en cada uno de ellos.  
 Además, cada vez que se guardan los documentos editados, se actualizan automáticamente las pestañas de los navegadores.
 ### GitHub
-Se ha trabajado en este proyecto en dos ordenadores, por lo que tener GitHub como repositorio no sólo ha ayudado a generar copias de seguridad, sino que ha permitido pasar archivos entre mis dos ordenadores para poder trabajar desde cualquiera de ellos.
-
-También permite crear distintas ramas, por ejemplo: en el ordenador de sobremesa he creado una rama donde he implementado un manifest de la web, mientras que en el portátil estos cambios no aparecen porque aún no quiero que se implemente en la rama principal.
-
+Se ha trabajado en este proyecto en dos ordenadores, por lo que tener GitHub como repositorio no sólo ha ayudado a generar copias de seguridad, sino que ha permitido pasar archivos entre mis dos ordenadores para poder trabajar desde cualquiera de ellos.  
+También permite crear distintas ramas, por ejemplo: en el ordenador de sobremesa he creado una rama donde he implementado un manifest de la web, mientras que en el portátil estos cambios no aparecen porque aún no quiero que se implemente en la rama principal.  
 Por último, es una forma de compartir el proyecto con otras personas.
 ### SVGator
 Mediante esta herramienta en línea gratuita, he diseñado algunos de los SVGs utilizados en este proyecto de manera fácil y rápida.
 ### Adobe Illustrator
 Algunas de las funcionalidades de SVGator están limitadas, por lo que he aprovechado también este software para terminar de pulir los archivos vectoriales.
 ### Adobe Photoshop
-He tomado diversas imágenes para colgar en la página web. Las de monedas han sido recortadas y rotadas con esta herramienta.
+He tomado diversas imágenes con mi smartphone para colgar en la página web. Las de monedas han sido recortadas y rotadas con esta herramienta o con el editor de imágenes de Android.
 ### ILoveImg
 Las fotografías que he tomado ocupaban 10MB porque tenían una resolución de 8000x6000px. Las he reducido a 300px de ancho y las he comprimido gracias a esta herramienta online, reduciendo su tamaño a unas decenas de kilobytes.
 
@@ -118,3 +125,6 @@ Las fotografías que he tomado ocupaban 10MB porque tenían una resolución de 8
 ### 22 de noviembre de 2023
 + Página de numismática
   + Se ha creado una página donde se habla de qué es la numismática, con diversas imágenes y artículos.
+### 30 de noviembre de 2023
++ Página de monedas
+  + Se ha finalizado la creación de la página dedicada a monedas. Artículos de 3 monedas de diferentes tipos.
