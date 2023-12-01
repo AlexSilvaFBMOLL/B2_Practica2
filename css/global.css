@@ -1,6 +1,7 @@
 /* En este archivo se encuentran estilos aplicados globalmente a todas las páginas del proyecto, así como variables globales, media querys aplicadas a todo el proyecto y los estilos referentes a la barra de navegación y al footer de las páginas */
 
 /* Fuentes personalizadas */
+/* Archivos ttf con fuentes Gill Sans, ya que muchos dispositivos no tienen esta fuente */
 @font-face {
   font-family: 'Gill Sans';
   src: url(../media/font/Gill-Sans.ttf);
@@ -9,9 +10,9 @@
   font-family: 'Gill Sans Bold';
   src: url(../media/font/Gill-Sans-Bold.ttf);
 }
-/* Archivos ttf con fuentes Gill Sans, ya que muchos dispositivos no tienen esta fuente */
 
 /* Estilos diferentes para modo claro y modo oscuro */
+/* Mediante la media query de prefers-color-scheme se puede cambiar la apariencia de la página en función de el modo que tenga el usuario configurado en su dispositivo. Además desde la pestaña de inspeccionar de un navegador se puede visualizar la página en cualquiera de sus modos. */
 @media (prefers-color-scheme: dark) {/* Modo oscuro */
   :root{/* Variables globales */
     --body-background: #333;/* Color de fondo del body */
@@ -38,7 +39,6 @@
     --background-filter: #ffffff80;
   }
 }
-/* Mediante la media query de prefers-color-scheme se puede cambiar la apariencia de la página en función de el modo que tenga el usuario configurado en su dispositivo. Además desde la pestaña de inspeccionar de un navegador se puede visualizar la página en cualquiera de sus modos. */
 
 /* Estilos globales */
 * {/* Fuente, padding y margen por defecto */
@@ -80,6 +80,7 @@ header nav a:hover, header nav a.active {/* Cursor sobre Links del Navbar y clas
   height: 60px;
   padding: 0px 10px;
 }
+
 /* El botón desplegable del menú no es un botón, sino una checkbox. Cuando está marcada muestra los enlaces de navegación en una columna, si está desmarcada los oculta */
 #menu {/* Ocultar la checkbox del menú */
   display: none;
@@ -112,6 +113,7 @@ footer a {/* Enlace al github */
 }
 
 /* Media querys de resolución de pantalla relacionados con la navbar */
+/* En un ordenador se elimina el icono desplegable y se colocan los elementos del menú en una sola fila */
 @media (min-width: 1024px) {/* Resolución a partir de netbook (ordenador pequeño) */
   header nav {/* Barra de navegación */
     flex-wrap: nowrap;
@@ -132,4 +134,3 @@ footer a {/* Enlace al github */
     display: none;
   }
 }
-/* En un ordenador se elimina el icono desplegable y se colocan los elementos del menú en una sola fila */

@@ -1,4 +1,4 @@
-/* Estilos CSS aplicados únicamente a los html que contienen monedas */
+/* Estilos CSS aplicados únicamente a los html que contienen monedas, billetes o exonumia */
 h1, h2, h3 {/* Colores de encabezados */
   color: var(--text-color);
 }

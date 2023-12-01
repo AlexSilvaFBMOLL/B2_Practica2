@@ -17,6 +17,7 @@ main p, main img {/* Colores de texto (img para los alt) */
   font-size: 33px;
   font-family: 'Gill Sans Bold';
 }
+
 /* Sección de información */
 #info {/* Sección con imagen de fondo e información de la web */
   content: "";
@@ -39,6 +40,7 @@ main p, main img {/* Colores de texto (img para los alt) */
 #info div p {/* Limitar el tamaño de los párrafos de la sección de información */
   max-width: 300px;
 }
+
 /* Secciones con imágenes de elementos numismáticos */
 .numis {/* .numis es la clase que recibe el section con las imágenes */
   display: flex;
@@ -81,6 +83,7 @@ main p, main img {/* Colores de texto (img para los alt) */
   display: block;
   
 }
+
 /* Enlaces a páginas y programas del mundo de la numismática */
 aside {/* Contenedor de otras páginas */
   display: flex;
@@ -114,6 +117,7 @@ aside a:hover {/* Los enlaces de interés al pasar el ratón por encima */
 aside a img {
   margin-right: 10px;
 }
+
 /* Media querys de resolución */
 @media (min-width: 795px) {/* Resolución aproximada a partir de tablet. Es un valor ajustado manualmente para que la visualización de los elementos no se distorsione */
   #info {/* Pone en dos columnas el texto del apartado de info */
