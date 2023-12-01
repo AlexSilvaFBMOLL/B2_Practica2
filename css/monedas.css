@@ -29,7 +29,10 @@ article div {
 }
 article img {
   width: 300px;
+  height: 300px;
   max-width: 45vw;
+  max-height: 45vw;
+  object-fit: scale-down; /* Esto mantendrá las proporciones de la imagen aunque le hayamos indicado width y height */
 }
 article p {
   margin-top: 10px;
