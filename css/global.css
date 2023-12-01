@@ -111,7 +111,7 @@ footer a {/* Enlace al github */
   text-decoration: none;
 }
 
-/* Media querys de la navbar */
+/* Media querys de resolución de pantalla relacionados con la navbar */
 @media (min-width: 1024px) {/* Resolución a partir de netbook (ordenador pequeño) */
   header nav {/* Barra de navegación */
     flex-wrap: nowrap;
