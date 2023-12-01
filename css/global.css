@@ -49,27 +49,31 @@
 body {/* Color de fondo del cuerpo de la página */
   background-color: var(--body-background);
 }
-/* Para no tener que poner estas líneas en cada CSS las pongo aquí */
 
-/* Barra de navegación */
-header nav {/* Navbar */
+/* Header común en todas las páginas */
+header {
   min-height: 64px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;/* Solo en móviles */
-  justify-content: space-between;/* Solo en móviles */
+  justify-content: space-between; /* Sólo en móviles: Para poner el logo a la izquierda y el menú a la derecha */
+  flex-wrap: wrap; /* Sólo en móviles: Para que el nav con los enlaces se pasen a la siguiente línea */
   background-color: var(--nav-background);
 }
-header nav a.link {/* Enlaces del Navbar con clase link (todos menos el logotipo) */
-  flex-basis: 100%;/* Para que ocupen una línea entera en móviles */
-  display: none;
+header nav {/* Navbar */
+  flex-basis: 100%; /* Sólo en móviles: Para que el nav pase a la siguiente línea */
+  display: flex;
+  flex-direction: column; /* Sólo en móviles */
+}
+header nav a {/* Enlaces del Navbar (todos menos el logotipo, que está fuera del elemento nav) */
+  flex-basis: 100%; /* Para que ocupen una línea entera en móviles */
+  display: none; /* Sólo en móviles: Se ocultan hasta que se pulse el menú */
   padding: 10px 10px;
   align-items: center;
   text-decoration: none;
   font-size: 20px;
   color: var(--nav-link);
 }
-header nav a.link:hover, header nav a.link.active {/* Cursor sobre Links del Navbar */
+header nav a:hover, header nav a.active {/* Cursor sobre Links del Navbar y clase active (cuando la página del enlace es la que está en pantalla) */
   background-color: #099990;/* No cambia en función del modo de visualización */
 }
 #Logo {/* SVG del logo: dimensiones y padding */
@@ -83,7 +87,7 @@ header nav a.link:hover, header nav a.link.active {/* Cursor sobre Links del Nav
 #menu + label {/* Alinear el contenedor de la imagen del menú */
   align-self: center;
 }
-#menu:checked ~ a.link {/* Mostrar los enlaces al pulsar el menú */
+#menu:checked ~ nav a {/* Mostrar los enlaces del navbar al pulsar el menú */
   display: flex;
 }
 #menu + label > img {/* SVG del menú, la imagen en sí */
@@ -112,13 +116,14 @@ footer a {/* Enlace al github */
   header nav {/* Barra de navegación */
     flex-wrap: nowrap;
     justify-content: center;
+    flex-direction: row;
   }
-  header nav a:first-of-type {/* Enlace del logo */
+  header > a {/* Enlace del logo */
     position: absolute;
     align-self: center;
     left: 0;
   }
-  header nav a.link {/* Links del Navbar */
+  header nav a {/* Links del Navbar */
     flex-basis: content;
     display: flex;
     padding: 10px 25px;

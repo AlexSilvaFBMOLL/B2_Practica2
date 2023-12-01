@@ -11,18 +11,19 @@
 <body>
   <header>
     <!--Header: barra de navegación, logo-->
+    <!--Logotipo de la web con enlace a la página principal-->
+    <a href="index.html"><img src="media/svg/CWLetters.svg" alt="Logotipo de CoinWorld" id="Logo"/></a>
+    <!--Sustituto de un botón, ya que no se ha explicado javascript lo haré puramente con CSS-->
+    <!--Al ser marcada la checkbox (pulsando la imagen del menú) se muestran los enlaces de abajo-->
+    <input type="checkbox" id="menu"/>
+    <label for="menu"><img src="media/svg/Menu.svg" alt="Menú desplegable"/></label>
+    <!--Navbar-->
     <nav>
-      <!--Logo-->
-      <a href="index.html"><img src="media/svg/CWLetters.svg" alt="Logotipo de CoinWorld" id="Logo"/></a>
-      <!--Sustituto de un botón, ya que no se ha explicado javascript lo haré puramente con CSS-->
-      <!--Al ser marcada la checkbox (pulsando la imagen del menú) se muestran los enlaces de abajo-->
-      <input type="checkbox" id="menu"/>
-      <label for="menu"><img src="media/svg/Menu.svg" alt="Menú desplegable"/></label>
       <!--Enlaces de navegación-->
-      <a href="numismatica.html" class="link">Numismática</a>
-      <a href="monedas.html" class="link">Monedas</a>
-      <a href="billetes.html" class="link">Billetes</a>
-      <a href="exonumia.html" class="link">Exonumia</a>
+      <a href="numismatica.html">Numismática</a>
+      <a href="monedas.html">Monedas</a>
+      <a href="billetes.html">Billetes</a>
+      <a href="exonumia.html">Exonumia</a>
     </nav>
   </header>
   <!--Contenido: página de inicio, explicación-->
@@ -52,7 +53,7 @@
         <img src="media/img/monedas/ES_UC350.png" alt="Imagen de una moneda de plata de colección: 30 Euros conmemorando el santo año Xacobeo.">
         <span>Monedas de colección</span>
       </a>
-      <a href="monedas.html#Aconmemorativa">
+      <a href="monedas.html#conmemorativa">
         <img src="media/img/monedas/AT_KM3275.png" alt="Imagen de una moneda conmemorativa: 2 Euros conmemorando el centenario de la república austriaca.">
         <span>Monedas conmemorativas</span>
       </a>

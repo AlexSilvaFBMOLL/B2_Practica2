@@ -28,6 +28,9 @@ article div {
   justify-content: center;
 }
 article img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 300px;
   height: 300px;
   max-width: 45vw;
