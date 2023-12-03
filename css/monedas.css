@@ -5,12 +5,13 @@ h1, h2, h3 {/* Colores de encabezados */
 p, img, label {/* Colores de texto (img para los alt) */
   color: var(--text-color-secondary);
 }
-main {
+/* Sección principal */
+main {/* Contenedor de los artículos */
   display: flex;
   flex-direction: column;
   right: 0;
 }
-article {
+article {/* Artículos con texto e imágenes */
   align-self: center;
   text-align: justify;
   margin: 20px 0px;
@@ -18,16 +19,16 @@ article {
   border-bottom: 1px solid grey;
   max-width: 1000px;
 }
-article > * {
+article > * { /* Todos los elementos dentro de los artículos */
   margin: 0px 20px;
 }
-article div {
+article section { /* Elemento contenedor de las imágenes */
   display: flex;
   gap: 10px;
   margin: 20px;
   justify-content: center;
 }
-article img {
+article img { /* Imágenes */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,6 +38,6 @@ article img {
   max-height: 45vw;
   object-fit: scale-down; /* Esto mantendrá las proporciones de la imagen aunque le hayamos indicado width y height */
 }
-article p {
+article p { /* Párrafos */
   margin-top: 10px;
 }

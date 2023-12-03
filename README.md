@@ -128,3 +128,12 @@ Las fotografías que he tomado ocupaban 10MB porque tenían una resolución de 8
 ### 30 de noviembre de 2023
 + Página de monedas
   + Se ha finalizado la creación de la página dedicada a monedas. Artículos de 3 monedas de diferentes tipos.
+### 1 de diciembre de 2023
++ Página de billetes
+  + Artíuculos de tres billetes diferentes
++ Página de exonumia
+  + Artíuculos de cuatro piezas de exonumia diferentes
+### 3 de diciembre de 2023
++ Añadidas las imágenes que quedaban
++ Revisar y comentar los archivos
++ Finalizado el proyecto de la práctica 2
