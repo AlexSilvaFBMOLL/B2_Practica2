@@ -49,12 +49,20 @@ proyecto
 │   │
 │   └───img (imágenes tomadas por mí)
 |   │   └───billetes
+│   │   │   |   ES_P147-R.jpg (España P# 147 Reverso)
 │   │   │   |   ES_P147.jpg (España P# 147)
+│   │   │   |   EUR_10-R.jpg (Billete de 10 euros Reverso)
 │   │   │   |   EUR_10.jpg (Billete de 10 euros)
+│   │   │   |   US_2-R.jpg (Billete de 2 dólares Reverso)
 │   │   │   |   US_2.jpg (Billete de 2 dólares)
 |   │   └───exonumia
+│   │   │   |   medalla-R.png (Medalla española Reverso)
+│   │   │   |   medalla.png (Medalla española)
+│   │   │   |   recuerdo-R.png (Moneda elongada de recuerdo Reverso)
 │   │   │   |   recuerdo.png (Moneda elongada de recuerdo)
+│   │   │   |   replica-R.png (Réplica francesa de una moneda Reverso)
 │   │   │   |   replica.png (Réplica francesa de una moneda)
+│   │   │   |   token-R.png (Ficha de feria Reverso)
 │   │   │   |   token.png (Ficha de feria)
 |   │   └───fondo
 │   │   │   |   accesorios.jpg
