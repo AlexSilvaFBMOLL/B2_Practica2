@@ -53,8 +53,8 @@ proyecto
 │   │   │   |   ES_P147.jpg (España P# 147)
 │   │   │   |   EUR_10-R.jpg (Billete de 10 euros Reverso)
 │   │   │   |   EUR_10.jpg (Billete de 10 euros)
-│   │   │   |   US_2-R.jpg (Billete de 2 dólares Reverso)
-│   │   │   |   US_2.jpg (Billete de 2 dólares)
+│   │   │   |   US_5-R.jpg (Billete de 5 dólares Reverso)
+│   │   │   |   US_5.jpg (Billete de 5 dólares)
 |   │   └───exonumia
 │   │   │   |   medalla-R.png (Medalla española Reverso)
 │   │   │   |   medalla.png (Medalla española)
@@ -101,7 +101,7 @@ Por último, es una forma de compartir el proyecto con otras personas.
 ### SVGator
 Mediante esta herramienta en línea gratuita, he diseñado algunos de los SVGs utilizados en este proyecto de manera fácil y rápida.
 ### Adobe Illustrator
-Algunas de las funcionalidades de SVGator están limitadas, por lo que he aprovechado también este software para terminar de pulir los archivos vectoriales.
+Algunas de las funcionalidades de SVGator están limitadas, por lo que he aprovechado también este software para terminar de pulir los archivos vectoriales. Además de permitirme editar algunas imágenes que en Photoshop no se podían abrir (billetes estadounidenses).
 ### Adobe Photoshop
 He tomado diversas imágenes con mi smartphone para colgar en la página web. Las de monedas han sido recortadas y rotadas con esta herramienta o con el editor de imágenes de Android.
 ### ILoveImg
@@ -144,4 +144,6 @@ Las fotografías que he tomado ocupaban 10MB porque tenían una resolución de 8
 ### 3 de diciembre de 2023
 + Añadidas las imágenes que quedaban
 + Revisar y comentar los archivos
+### 6 de diciembre de 2023
++ Cambios menores
 + Finalizado el proyecto de la práctica 2
